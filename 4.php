@@ -10,7 +10,7 @@ $largestPalindromicNumber = 0;
 for ($i = 100; $i <= 999; $i++ ) {
   for ($j = 100; $j <= 999; $j++ ) {
     $product = $i * $j;
-    if (isPalindromicNumber($product) && $product > $largestPalindromicNumber) {
+    if ($product > $largestPalindromicNumber && isPalindromicNumber($product)) {
       $largestPalindromicNumber = $product;
     }
   }
